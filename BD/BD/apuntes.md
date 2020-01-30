@@ -1,7 +1,7 @@
 # Base de datos
 Es un conjunto de datos con un mismo contexto que pueden ser convertidos en información.
 
-#### Base datos relacionales y no relacionales
+#### Base de datos relacionales y no relacionales
 Existen dos tipos de bases de datos, bases de datos relacionarles y no relacionarles.
 
 
