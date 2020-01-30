@@ -1,7 +1,7 @@
 # Base de datos
 Es un conjunto de datos con un mismo contexto que pueden ser convertidos en información.
 
-#### Base ded datos relacionales y no relacionales
+#### Base datos relacionales y no relacionales
 Existen dos tipos de bases de datos, bases de datos relacionarles y no relacionarles.
 
 
@@ -34,18 +34,18 @@ Surgen de a necesidad de almacenar datos y en un principio sé hacia en texto pl
 
 Una entidad es similar a un objeto (POO) y representa algo del mundo real y cuenta con atributos y por convención las entidades se nombran en plural.
 
-Atributos compuestos son aquellos que tienen atributos ellos mismos.
+* Atributos compuestos son aquellos que tienen atributos ellos mismos.
 Atributos llaves son atributos que identifican a la entidad.
 
-Entidades débiles: no pueden existir sin una entidad fuerte
+* Entidades débiles: no pueden existir sin una entidad fuerte
 
-Identidades débiles por identidad: No se distinguen entre si más que por la clave de su identidad.
+* Entidades débiles por identidad: No se distinguen entre si más que por la clave de su identidad.
 
-Identidades débiles por existencia:  Se les asigna una clave propia.
+* Entidades débiles por existencia:  Se les asigna una clave propia.
 
 
 ##### Relaciones
-Relaciones nos permiten unir nuestras entidades.
+Las relaciones nos permiten unir nuestras entidades.
 
 ##### Cardianlidad
 La carnalidad es una propiedad de las relaciones y tiene que ver con los números de pertenencias.
