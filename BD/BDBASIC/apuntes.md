@@ -1,10 +1,10 @@
-#SQL y MySql
+# SQL y MySql
 
 
-####¿Que es una base de datos?
+#### ¿Que es una base de datos?
 Una Base de datos es un lugar donde se almacenan una gran cantidad de datos que posteriormente a través de un proceso se convierten en información. 
 
-####Comandos MySql
+#### Comandos MySql
 Iniciar sesión
 ~~~
     mysql -u user-name -p
@@ -24,14 +24,14 @@ Muestra el detalle completo de la tabla.
 ___
 
 
-####Motores de base de datos
+#### Motores de base de datos
 Los motores de base datos más conocidos son __Innodb__ y __Myissam__, entre ambos existen ciertas diferencia notables que vale la  pena mencionar para saber cual eligir.
 
 Innodb considerado como un motor de base de datos transaccional conforme [ACID](https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos) con la capacidad de commit, rollback, recuperación de fallos.
 
 Myissam es un motor de base de datos que trata tablas no transaccionales lo cual lo hace más rápido en la lectura y escritura de datos.
 
-#####Algunas ventajas y desventajas
+##### Algunas ventajas y desventajas
 Innodb
 + Soporte de transacciones.
 + Bloqueo de registros.
@@ -40,13 +40,13 @@ Myissam
 + Mayor velocidad en la recuperación de datos.
 + Recomendable para aplicaciones donde predominan la sentencia __select__ que los __inserts/updates__.
 
-####Cardinalidad
+#### Cardinalidad
 La cardinalidad son simplemente las relaciones que pueden existir entre las tablas de una base de datos.
 + uno a uno
 + uno a muchos
 + muchos a a uno
 
-####Lenguaje DDL
+#### Lenguaje DDL
 Lenguaje de definición de datos:
 + Create: crear objectos tales como vistas, tablas, store procedures e indices.
 + Drop: Utilizado para eliminar objectos como vistas, store procedures, tablas.
@@ -68,7 +68,7 @@ create table if not exists books(
 );
 ~~~
 
-####Lenguaje DML
+#### Lenguaje DML
 Lenguaje de manipulación de datos proporcionado por los sistemas gestores de base de datos que permite tareas de consultas o modificación de datos.
 
 ##### Select
