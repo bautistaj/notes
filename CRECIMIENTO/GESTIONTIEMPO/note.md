@@ -15,7 +15,7 @@ Cuadrantes:
 
 Debemos de ser eficientes en las tareas que realizamos, para lo cual debemos evitar:
 * Mediocridad: las tareas que realizamos en poco tiempo y por lo cual no agregamos ningún tipo de valor.
-* Perfeccionismo: Las tareas tienen un gran valor pero toma demasiado tiempo esto afecta en la realización de otras taras.
+* Perfeccionismo: Las tareas tienen un gran valor pero toma demasiado tiempo esto afecta en la realización de otras tareas.
 
 Por lo que cada tarea que realicemos deben de estar entre la mediocridad y el perfeccionismo, cada tarea debe tener un valor agregado y el tiempo es considerable como para no afectar a otras actividades.
 
