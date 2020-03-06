@@ -8,7 +8,7 @@ Existen dos tipos de bases de datos, bases de datos relacionarles y no relaciona
 Ejemplos de Gestores para bases de datos Relacionales:
 - SqlServer
 - MySQL
-- Postgresql
+- Postgrestsql
 - MariaDB
 - Oracle
 
@@ -18,7 +18,7 @@ Ejemplos de Gestores para bases de datos No Relacionales:
 - MongoDB
 - Elasticsearch
 
-#### Serivicios de base de datos
+#### Servicios de base de datos
 Servicios de bases de datos se clasifican en dos tipos Auto Administradas y Administradas.
 - Auto Administradas: Base de datos instalada en el servidor en donde tu te encargas de todo el mantenimiento de la misma.
 
@@ -28,7 +28,7 @@ Servicios de bases de datos se clasifican en dos tipos Auto Administradas y Admi
 
 Edgar Codd inventor de las RBD.
 
-Surgen de a necesidad de almacenar datos y en un principio sé hacia en texto plano, fáciles de guardar pero difíciles de consultarlas.
+Surgen de a necesidad de almacenar datos y en un principio se hacia en texto plano, fáciles de guardar pero difíciles de consultarlas.
 
 ##### Entidades y atributos.
 
@@ -47,7 +47,7 @@ Atributos llaves son atributos que identifican a la entidad.
 ##### Relaciones
 Las relaciones nos permiten unir nuestras entidades.
 
-##### Cardianlidad
+##### Cardinalidad
 La carnalidad es una propiedad de las relaciones y tiene que ver con los números de pertenencias.
 
 * Cardinalidad: 1 a 1

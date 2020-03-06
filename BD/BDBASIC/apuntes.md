@@ -1,23 +1,23 @@
 # SQL y MySql
 
 
-#### ¿Que es una base de datos?
+#### ¿Qué es una base de datos?
 Una Base de datos es un lugar donde se almacenan una gran cantidad de datos que posteriormente a través de un proceso se convierten en información. 
 
 #### Comandos MySql
 Iniciar sesión
-~~~
+~~~sql
     mysql -u user-name -p
 ~~~
 Donde -u es usuario y -p es password.
 ___
-~~~
+~~~sql
     use data-base-name;
 ~~~
 Cambiar de base de datos a utilizar.
 ___
 
-~~~
+~~~sql
     show full columns from books;
 ~~~
 Muestra el detalle completo de la tabla.
@@ -25,7 +25,7 @@ ___
 
 
 #### Motores de base de datos
-Los motores de base datos más conocidos son __Innodb__ y __Myissam__, entre ambos existen ciertas diferencia notables que vale la  pena mencionar para saber cual eligir.
+Los motores de base datos más conocidos son __Innodb__ y __Myissam__, entre ambos existen ciertas diferencia notables que vale la  pena mencionar para saber cuál elegir.
 
 Innodb considerado como un motor de base de datos transaccional conforme [ACID](https://dosideas.com/noticias/base-de-datos/973-acid-en-las-bases-de-datos) con la capacidad de commit, rollback, recuperación de fallos.
 
@@ -52,9 +52,9 @@ Lenguaje de definición de datos:
 + Drop: Utilizado para eliminar objectos como vistas, store procedures, tablas.
 + Alter: Empleado para editar tablas agregando campos o cambiando la definición de los mismos.
 
-Una buena practica es que el nombre de la tabla debe ser un sustativo en plurarl en ingles.
+Una buena practica es que el nombre de la tabla debe ser un sustantivo en plural en ingles.
 
-~~~
+~~~sql
 create table if not exists books(
     id Integer unsigned primary key auto_increment,
     author Integer,
@@ -72,69 +72,60 @@ create table if not exists books(
 Lenguaje de manipulación de datos proporcionado por los sistemas gestores de base de datos que permite tareas de consultas o modificación de datos.
 
 ##### Select
-~~~
+~~~sql
 select * from table where field = 'value'
 ~~~
 ##### Insert
-~~~
+~~~sql
 insert into table (field1, field2) values (value1, value2);
 ~~~
 
 ##### Update
-~~~
+~~~sql
 udate table field = 'value to modify' where field = value
 ~~~
 ##### Delete
-~~~
+~~~sql
 delete from table where field = value;
 ~~~ 
 
 ##### Inner JOIN
-Es considerada la forma más fácil de obtner información, practicamente seobtienen todos las filas dela tabla A que conciden con la table B.
+Es considerada la forma más fácil de obtener información, prácticamente se obtienen todos las filas dela tabla A que coinciden con la table B.
 
-~~~
+~~~sql
 select * from table_a as a inner join table_b as b on a.pk = b.pk;
 ~~~ 
 
 ##### Left JOIN
-Se selecciona todas las filas de la tabla A y ademas de las que coincidan de la tabal B.
+Se selecciona todas las filas de la tabla A y ademas de las que coincidan de la tabla B.
 
-~~~
+~~~sql
 select * from table_a as a left join table_b as b on a.pk = b.pk;
 ~~~ 
 ##### Right JOIN
-Se selecciona todas las filas de la tabla B y ademas de las que coincidan de la tabal A.
+Se selecciona todas las filas de la tabla B y ademas de las que coincidan de la tabla A.
 
-~~~
+~~~sql
 select * from table_a as a left join table_b as b on a.pk = b.pk;
 ~~~ 
 ##### Outer JOIN
-Retorna todas las filas de ambas tablas ademas de hacer la únion entr las tablas que coinciden.
+Retorna todas las filas de ambas tablas ademas de hacer la unión entre las tablas que coinciden.
 
-~~~
+~~~sql
 select * from table_a as a outer join table_b as b on a.pk = b.pk;
 ~~~ 
 ##### Left excluding JOIN
 Para este caso retorna todas las filas de la tabla A que no tengan ninguna coincidencia con la tabla B.
-~~~
+~~~sql
 select * from table_a as a left join table_b as b on a.pk = b.pk where b.pk is null;
 ~~~ 
 ##### Right excluding JOIN
 Para este caso retorna todas las filas de la tabla B que no tengan ninguna coincidencia con la tabla A.
-~~~
+~~~sql
 select * from table_a as a right join table_b as b on a.pk = b.pk where b.pk is null;
 ~~~ 
 ##### Outer excluding JOIN
 Para este caso retorna todas las filas de ambas tablas que no tengan coincidencias.
-~~~
+~~~sql
 select * from table_a as a full outer join table_b as b on a.pk = b.pk where a.pk is null or b.pk is null;
-~~~ 
-
-
-
-
-
-
-
-
-
+~~~
