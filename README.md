@@ -9,6 +9,7 @@
 ## Base de datos
 * [Fundamentos de bases de datos](https://github.com/bautistaj/notes/blob/master/BD/BD/apuntes.md)
 * [SQL y MySql](https://github.com/bautistaj/notes/blob/master/BD/BDBASIC/apuntes.md)
+* [MongoDB](https://github.com/bautistaj/notes/blob/master/BD/MONGO/note.md)
 ## Backend
 * [Fundamentos de APIREST](https://github.com/bautistaj/notes/blob/master/BACK_END/API_REST/note.md)
 * [ECMAScript](https://github.com/bautistaj/notes/blob/master/BACK_END/JAVASCRIPT/ecmas6.md)
