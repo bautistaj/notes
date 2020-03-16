@@ -16,7 +16,11 @@
 * [Node](https://github.com/bautistaj/notes/blob/master/BACK_END/NODE/note.md)
 * [Expresiones Regulares](https://github.com/bautistaj/notes/blob/master/BACK_END/REGULAR_EXPRESSIONS/note.md)
 ## Frontend
+* [Web Components](https://github.com/bautistaj/web-components)
 * [PWA con React](https://github.com/bautistaj/notes/blob/master/FRONT_END/REACT/PWA/note.md)
+
+* [Preprocesadores](https://github.com/bautistaj/notes/blob/master/FRONT_END/PREPROCESADORES/note.md)
+  
 ## Servidores
 * [Administración de servidores Linux](https://github.com/bautistaj/notes/blob/master/SERVER/LINUX_SERVER/note.md)
 * [AWS](https://github.com/bautistaj/notes/blob/master/SERVER/AWS/note.md)

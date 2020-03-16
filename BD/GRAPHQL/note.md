@@ -70,9 +70,6 @@ Los mutations por lo general siempre reciben un parametro de tipo Input
 nombreMutation(input: InputType): tipo
 ~~~
 
-
-
-
 #### Nested Types
 Relación entre tipos de del schema
 ~~~graphql
