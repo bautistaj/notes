@@ -1,7 +1,4 @@
 # Contenido
-
-
-
 ## Arquitectura de software
 * [Fundamentos de arquitectura de software](https://github.com/bautistaj/notes/blob/master/ARCHITECTURE/BASIC/note.md)
 ## Crecimiento profesional
