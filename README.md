@@ -1,4 +1,6 @@
 # Contenido
+
+
 ## Arquitectura de software
 * [Fundamentos de arquitectura de software](https://github.com/bautistaj/notes/blob/master/ARCHITECTURE/BASIC/note.md)
 ## Crecimiento profesional
@@ -24,3 +26,6 @@
 * [Administración de servidores Linux](https://github.com/bautistaj/notes/blob/master/SERVER/LINUX_SERVER/note.md)
 * [AWS](https://github.com/bautistaj/notes/blob/master/SERVER/AWS/note.md)
 * [DigitalOcean](https://github.com/bautistaj/notes/blob/master/SERVER/DIGITALOCEAN/note.md)
+****
+
+
