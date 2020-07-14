@@ -1,6 +1,9 @@
 # Contenido
 
 
+## Algoritmos
+* [Algoritmos de ordenamiento](https://github.com/bautistaj/notes/blob/master/ALGORITMS/SORT/note.md)
+
 ## Arquitectura de software
 * [Fundamentos de arquitectura de software](https://github.com/bautistaj/notes/blob/master/ARCHITECTURE/BASIC/note.md)
 ## Crecimiento profesional
