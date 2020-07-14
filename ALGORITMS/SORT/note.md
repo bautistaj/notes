@@ -30,3 +30,23 @@ if __name__ == "__main__":
 # Time complexity = O(n^2)
 # Space complexity = O(1)
 ```
+
+## Selection Sort
+
+Algoritmo que ordena una matriz al encontrar repetidamente el elemnto mínimo (Considerando el orden acsendente) de la parte no ordenada y lo pone al principio.
+
+El algortimo mantiene 2 sub arrays.
+* El array ordenado
+* El array restante que no esta desordenado.
+
+En cada iteración el elemento mínimo del arreglo desordenado se toma y se coloca el el sub array ordenado.
+
+Considere los siguientes pasos:
+
+Encontrar el elemnto mínimo y colocarlo al inicio.
+```
+[64 25 12 22 11]
+[11 25 12 22 64]
+[11 12 22 25 64]
+```
+
