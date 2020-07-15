@@ -50,3 +50,30 @@ Encontrar el elemnto mínimo y colocarlo al inicio.
 [11 12 22 25 64]
 ```
 
+
+```python
+def selection_sort(A):
+  size_array = len(A) # c0 = 1
+  index_i = 0 # c1 = 1
+
+  for index_i in range(size_array): # c2 = n
+    low_index = index_i # c3 = 1
+    
+    for index_j in range(index_i + 1, size_array): # c4 = n^2
+      if A[index_j] < A[low_index]: # c5 = 1
+        low_index = index_j # c6 = 1
+    
+    A[index_i], A[low_index] = A[low_index], A[index_i] # c7 = 1
+
+if __name__ == "__main__":
+  A = [200,10000,12,35,7,8,9,2,4]
+  selection_sort(A)
+
+# T(n) = c0 + c1 + c2*n + c3 + c4*n^2 + c5 + c6 + c7
+# T(n) = c4*n^2 + c2*n + c0 + c1 + c3 + c5 + c6 + c7
+# T(n) = n^2 + n
+# T(n) = n^2
+
+# Time complexity = O(n^2)
+# Space complexity = O(1)
+```
