@@ -85,3 +85,104 @@ JWT_SECRET=090909
 ENVIRONMENT=PROD
 DATABASE_URL=postgres://postgres:password@localhost:5444/persist
 ```
+
+
+# Deploy Angular App in heroku
+Create app in heroku
+
+
+crate configuration of environment in file angular.json
+            "staging": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.staging.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            },
+
+
+You should configurate NPM_CONFIG_PRODUCTION in false with the next command
+heroku config:set NPM_CONFIG_PRODUCTION=false.
+
+
+
+
+
+Create server.js file for our app
+
+```js
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
+app.use(express.static(__dirname+'/dist/persist'));
+app.get('/',function(req,res){
+    res.sendFile(path.join(__dirname+'/dist/persist/index.html'));
+});
+
+app.listen(process.env.PORT || 8080);
+```
+
+We should install express path 
+
+```bash
+npm install express path --save
+```
+
+
+create environment variable HEROKU_WEB_APP_STAGING name od the app and HEROKU_API_KEY the access token to heroku.
+
+
+Configure .gitlab-ci.yml
+
+```yml
+image: node:latest
+
+before_script:
+  - apt-get update -qy
+  - apt-get install -y ruby-dev
+  - gem install dpl
+
+stages:
+  - staging
+
+staging:
+  type: deploy
+  stage: staging
+  image: ruby:latest
+  script:
+    - dpl --provider=heroku --app=$HEROKU_WEB_APP_STAGING --api-key=$HEROKU_API_KEY
+  only:
+    - staging
+
+```
+
+
+crate Procfile  with next command.
+
+```
+web: npm run start:prod
+```
