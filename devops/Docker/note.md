@@ -1,5 +1,8 @@
 # Fundamentos de Docker
 
+# Introducción
+
+## Introducción
 Durante el desarrollo de software vamos a tener diferentes problamaticas que resolver, como por ejemplo:
 las construcción, distribución y la ejecuón. Cada uno de estos problemas nos enfrentamos todos los desarrolladores.
 
@@ -25,3 +28,24 @@ Ejecutar Software: La máquina donde se escribe el software siempre es distinta 
 * Dependencias
 * Disponibilidad de servicios externos
 * Recursos de hardware.
+
+## Virtualización
+Versión virtual de algún recurso como hardware, sitema operativo, dispositivo de almacenamiento o recurso de red.
+
+Con palabras más simples, es que nos permite atacar los tres grandes problemas del desarrollo de software profecionales.
+
+Ya  antes se a propuesto formas para atacar los problemas antes mencionado como por ejemplo las maquinas virtuales, acontinuación se describe algunas problematicas que presnetan.
+* Peso: que va en el orden de GB.
+* Consto de administración: necesitan mantenimiento al igual que un maquina.
+* Múltipls formatos: VDI, VMDK, VHD.
+
+
+Los contenedores son practicamnte la estandarización
+
+* Flexibles
+* Livianos
+* Protables
+* Bajo acoplamineto
+* Escalables
+* Seguros
+
