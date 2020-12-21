@@ -49,3 +49,442 @@ Los contenedores son practicamnte la estandarización
 * Escalables
 * Seguros
 
+## ¿Qué es y como funciona Docker?
+* Docker deamon, es un servicion el cual maneja todas las entidades con las cuales utiliza docker, encargado directo de conmunicación con SO.
+* Docker API.
+* Client Docker.
+
+
+4 entidades importantes:
+* Container
+* Image
+* Data volumes
+* Network
+
+
+# Contenedores
+
+## Comandos de docker
+
+Arrancar un contenedor.
+* docker run <image_container>
+* docker run hello-world
+
+Arrancar un contenedor asignándole un nombre.
+* docker run --name <name_container> <image_container>
+* docker run --name contenedor_test ubuntu
+
+Arrancar un contenedor con una terminal interactiva. Pasándole una shell para acceder al contenedor.
+
+ * docker run -it <image_container> <shell>
+ * docker run -it ubuntu bash
+
+Arrancar un contenedor. Mapeando un puerto del host a un puerto del contenedor.
+
+puerto_host : puerto_contenedor
+* docker run -p <host_port>:<container_port> <image_container>
+* docker run -p 8080:80 nginx
+
+
+Arrancar un contenedor con un volume.
+* docker run -v <volume_name>:<mount_point>:<options> <image_container>
+* Volume -> test
+* Punto de montaje en el contenedor -> /apps
+* Opciones -> rw (Lectura y escritura)
+* docker run -v test:/apps:rw nginx
+
+
+
+Arrancar un contenedor con un bind mount.
+* docker run -v <shared_folder>:<mount_point>:<options> <image_container>
+* Ruta del host a compartir -> /home/application
+* Punto de montaje en el contenedor -> /apps
+* Opciones -> ro (Solo lectura)
+* docker run -v /home/application:/apps:ro ubuntu
+
+Arrancar un contenedor con tmpfs.
+* docker run \
+--mount type=tmpfs,destination=<mount_point>,tmpfs-mode=<permisos>,tmpfs-size=<bytes_size> \
+<image_container>
+Ejemplo:
+
+* Punto de montaje en el contenedor -> /temporal
+* Permisos -> Todos los permisos solo para el propietario.
+* Tamaño del FS -> 21474836480 bytes = 20G
+* docker run \
+--mount type=tmpfs,destination=/temporal,tmpfs-mode=700,tmpfs-size=21474836480 \
+nginx
+
+
+Lista de los contenedores activos.
+* docker ps
+
+
+Lista de todos los contenedores activos e inactivos del sistema.
+* docker ps -a
+
+Lista los ID de todos los contenedores.
+* docker ps -aq
+
+Debugging
+
+Inspeccionar la data de un contenedor.
+Por su ID:
+* docker inspect <id_container>
+
+Por su nombre:
+* docker inspect <name_container>
+
+Aplicando filtros. Por ejemplo buscando las variables de entorno:
+* docker inspect -f '{{ json .Config.Env }}' <name_container>
+
+Ver los logs del contenedor.
+
+docker logs <name_container>
+- Eliminando contenedores
+🔹 Eliminar un contenedor que no este arriba.
+
+Se puede hacer tanto por nombre como por ID.
+* docker rm <name_container>
+
+Eliminar un contenedor aunque este arriba. Forzándolo.
+
+Se puede hacer tanto por nombre como por ID.
+* docker rm -f <id_container>
+
+
+Eliminar todos los contenedores que no esten arriba a la vez.
+* docker rm $(docker ps -aq)
+
+
+## Conceptos fundamentales de Docker: contenedores
+Un contenedor es una agrupación lógica la cual esta limitada a los recursos que puede puede acceder.
+
+Un contenedor es una maquina virtual la cual configuramos a los recursos que puede acceder.
+
+## Comprendiendo el estado de Docker
+
+Comandos:
+
+* docker run hello-world (corro el contenedor hello-world)
+* docker ps (muestra los contenedores activos)
+* docker ps -a (muestra todos los contenedores)
+* docker inspect <containe ID> (muestra el detalle completo de un contenedor)
+* docker inspect <name> (igual que el anterior pero invocado con el nombre)
+* docker run –-name hello-platzi hello-world (le asigno un nombre custom “hello-platzi”)
+* docker rename hello-platzi hola-platzy (cambio el nombre de hello-platzi a hola-platzi)
+* docker rm <ID o nombre> (borro un contenedor)
+* docker container prune (borro todos lo contenedores que esten parados)
+
+
+
+
+## Ciclo de vida de los contenedores.
+
+Cada vez que un contenedor se ejecuta, lo que pasa es que un nuevo proceso se ejecuta.
+
+Un contenedor corre simpre y cunado su procesos principal esta corriendo.
+
+Entonces para mantener un contenedor corriendo podemos ejecutar.
+* docker run --name alwaysup --detach ubuntu tail -f /dev/null
+
+Y para connectarnos a un contenedor que se esta ejecutando:
+* docker exec -it alwaysup bach
+
+
+El sieguiente comando nos devuelve el pid del proceso pricipal del contenedor.
+* docker inspect --format '{{.State.Pid}}' alwaysup
+
+## Exponiendo contenedores
+
+Cada contenedor tiene su propia interfaz de red virtual.
+
+Para exporner un prueto del contendor a nuestra maquina usamos el siguiente comando.
+* docker run -name proxy -p pruesto_anfitrion:puerto_contenedor
+* docker run --name proxy -p 8080:80 -d
+
+
+Para poder seguir los log del cotenedor podemos ejecutar:
+* docker logs -- tail 10 -f
+
+# Dato en docker
+## Bind mounts
+
+Persistir la data en nuestra maquina y no en en el contenedor.
+
+* docker run -d --name db -v /Users/mac/Documents/DEV/dev-ops/docker/mongo/data:/data/db mongo
+
+Uno de los riesgos es que tiene acceso a nuestros disco.
+
+## Volúmenes
+Forma más estandar de manjar datos con docker.
+
+Los volúmenes son el mecanismo preferido para conservar los datos generados y utilizados por los contenedores de Docker.
+
+Mostrar todos los vólumenes
+* docker volume ls
+
+Crear un nuevo volumen
+* docker volume create dbdata
+
+Montar un volumen en un docker container
+* docker run -d --name db --mount src=dbdata,dst=/data/db mongo
+
+
+## Insertar y extraer archivos de un contenedor
+Para poder copiar un archivo desde el host a nuetro contenedor.
+
+* docker cp file_name container_name:/path/file_name
+* docker cp test.txt copytest:/testing/prueba.txt
+
+Para extraer un archivo desde el contenedor a nuestro host
+* docker cp name_container:/path path_host
+* docker cp copytest:/testing/ localtesting
+
+No es necesario que el contenedor no esta corriendo para extraer los archivos.
+
+# Conceptos fundamentales de Docker: imágenes
+Imagenes es la forma en que docker intenta solucionar os problemas de contrucción y distribuicón de software.
+
+Las imagenes son plantillas a paratir de las cuales docker genera contenedores.
+
+Es solo una pieza de software que contiene lo necesario para que un contenedor se peude ejecutar exitosamente.
+
+Se podria comparar como una clase en POO.
+
+
+Listar las imagenes 
+* docker image ls 
+
+el *tag* es la version de la imagen.
+
+Descargar una imagen desde docker hub
+* docker pull ubuntu:20.04
+
+
+## Construyendo una imagen propia
+Para construir una imagen nos basamos en un archivo llamado Dockerfile.
+
+```Docker
+FROM ubuntu:latest
+RUN touch /usr/src/hola-platzi.txt
+```
+
+
+* docker pull
+* docker push
+
+Crear una imagen apartir de un Dockerfile
+* docker build -t ubuntu:btaj .
+Cambiar el tag para poder publicar nuestras propias imagenes
+* dcoker tag ubuntu:btaj bautistaj/ubuntu:btaj
+
+## El sistema de capas
+
+Revisar las capas de una imagen
+
+* docker history ubuntu
+
+
+Una imagen ocupa espacion dependinedo de las capas agregadas.
+
+Si agegamos y removemos archivos el peso aunmenta ya que cada capa es inmutable.
+
+
+# Usando Docker para desarrollar aplicaciones
+
+La configuración de Dockerfile es muy importante, esto para aprovechar todos los beneficios que docker nos ofrece.
+
+Para el siguiente caso que es para un aplicación de Node.
+
+Los archivos principales  para el manejo de las dependencias son:
+* package.json
+* package-lock.json
+
+Por esta razón son las mirameras en mover al contenedor y posteriormente hacer el install de node.
+
+El siguienete paso es mover los archivos de nuestra app, en este caso docker.
+
+```docker
+FROM node:12
+
+COPY ["package.json","package-lock.json", "/usr/src/"]
+
+WORKDIR /usr/src
+
+RUN npm install
+
+COPY [".", "/usr/src/"]
+
+EXPOSE 3000
+
+CMD ["npx","nodemon", "index.js"]
+```
+
+Ahora bien, necesitamos que nuestra app refleje los cambios de la app sin la necesidad de hacer el build.
+Paa ello vamos a realizar un bind-mount de los archivos que implican nustro app. Que para el caso es index.js
+* docker run --rm -p 3000:3000 -v /Users/mac/docker/index.js:/usr/src/index.js platziapp
+
+
+
+## Docker networking: colaboración entre contenedores
+
+Listar las redes de red:
+* docker network ls
+
+bridge: retrocompatibilida
+host: para que el contenedor tenga acceso a las redes de la maquina host.
+none: deshbilitar la networking.
+
+Crear red en docker.
+* docker network create --attachable platzinet
+--atachable permite que otros contenedores se conecte a ella.
+
+Inspeccionar las redes.
+* docker network inspect platzinet
+
+Vamos a crear un nuevo contenedor con mongo
+* docker run -d --name db mongo
+
+Ahora conectar el contendor anterior a nuestra red
+* docker network connect platzinet db
+
+Es turno de levantar una app para que se conecte a nuestra base de datos.
+* docker run -d --name app -p 3000:3000 --env MONGO_URL=mongodb://db:27017/test platziapp
+
+Si dos contenedores estan connectados a una misma red estas se pueden encontrar entre si con el nombre del contendor.
+
+Ahora solo resta conectar el contendor anterior a la red
+* docker network connect platzinet app
+
+
+## Docker Compose
+
+Todo lo anterio se puede realizar utilizando docker-compose
+```docker
+version: "3.8"
+
+services:
+  app:
+    image: platziapp
+    environment:
+      MONGO_URL: "mongodb://db:27017/test"
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
+
+  db:
+    image: mongo
+```
+
+## Comandos
+
+Ver la red que crea docer compose
+* docker network inspect docker_default
+
+Ver los servicios de docker compose
+* docker-compose ps
+
+Ver los logs de los servicios
+* docker-compose logs -f app
+
+Ejecutar un compnado
+* docker-compose exec app bash
+
+Bajar los servicios 
+* docker-compose down
+
+
+## Docker Compose como herramienta de desarrollo
+
+```docker
+version: "3.8"
+
+services:
+  app:
+    build: .
+    environment:
+      MONGO_URL: "mongodb://db:27017/test"
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src
+      - /usr/src/node_modules
+    command: npx nodemon index.js
+
+  db:
+    image: mongo
+```
+
+
+## Compose en equipo: override
+
+El archivo docker-compose.override.yml nos ayuda a sibreescribir el archivo original lo cuál no ayuda en el desarrollo.
+
+Archivo docker-compose.yml
+```docker
+version: "3.8"
+
+services:
+  app:
+    build: .
+    environment:
+      MONGO_URL: "mongodb://db:27017/test"
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src
+      - /usr/src/node_modules
+    command: npx nodemon index.js
+
+  db:
+    image: mongo
+```
+
+Archivo docker-compose.overrideyml
+```docker
+version: "3.8"
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/usr/src
+      - /usr/src/node_modules
+    command: npx nodemon index.js
+```
+
+NOTA: *Se recominda manejar los puertos en un solo archivo.*
+
+
+Podemos agregar un rango de puertos para poder escalar las aplicaciones.
+
+```docker
+ports:
+      - "3000-3001:3000"
+```
+
+Para lavantar más de un servicio de un contenedor:
+* docker-compose up -d --scale app=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
