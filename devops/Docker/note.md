@@ -473,6 +473,145 @@ Para lavantar más de un servicio de un contenedor:
 * docker-compose up -d --scale app=2
 
 
+## Administrando tu ambiente de Docker
+
+Eliminar los contenedores 
+* docker container prune
+
+Borra todos los contenedores que estén corriendo o apagados
+* docker rm -f $(docker ps -aq)
+
+Lista todos los volumes
+* docker volume ls 
+
+Borra todo lo que no se esté usando
+* docker system prune
+
+Limitar los recurso de nustros contenedores
+* docker run --name app --memory 1G platziapp
+
+Ver los estatus de los contenedores
+* docker stats
+
+## Deteniendo contenedores correctamente: SHELL vs. EXEC
+sigterm 
+sigkill
+
+Ver los últimos procesos
+* docker ps -l
+* 
+Si vemos el estatus de algún contenedor tiene un código de salida mayor a 128, la salida se produjo por un exception.
+
+
+Construyo la imagen
+* docker build -t loop.
+
+Corro el contenedor
+* docker run -d --name looper loop.
+
+Le envía la señal SIGTERM al contenedor, y si no se puede detener manda SIGKILL
+* docker stop looper
+
+Muestra el ps del último proceso
+* docker ps -l
+
+Le envía la señal SIGKILL al contenedor
+* docker kill looper
+
+Ver los procesos del contenedor
+* docker exec looper ps -ef
+
+
+*NOTA*
+
+*SHELL*
+Deja como proeceso principal al shell y no así el comando que nosotros estamos ejecutando
+
+*EXEC*
+Deja como proeceso principal el comando que nosotros estamos ejecutando
+
+
+
+## Contenedores ejecutables: ENTRYPOINT vs CMD
+
+El ENTRYPOINT de un contenedor es el comando que se va a correr y va a utilizar lo que diga comando como parametro del 
+ENTRYPOINT
+
+```docker
+FROM ubuntu:trusty
+
+ENTRYPOINT ["/bin/ping", "-c", "3"]
+
+CMD ["localhost"]
+```
+
+## El contexto de build
+Docker va a montar en un filesystem temporal todo los archivos disponibles en la ruta que se le pasa como parametro, "Que le build puede utilizar"
+
+
+Para evitar que no se copien archivos como node_modules al contenedor debemos utilizar .dockerignore
+
+Ejemplo .dockerignore
+```docker
+*.log
+.git
+.gitignore
+build/*
+Dockerfile
+npm-debug.logs
+README.md
+node_modules
+docker-compose
+```
+
+## Multi-stage build
+```docker
+
+# Define una fase llamada builder
+FROM node:12 as builder
+
+# copiar los archivos necesario para las dependecnias
+COPY ["package.json", "package-lock.json", "/usr/src/"]
+
+WORKDIR /usr/src
+
+# Se intalan las dependencias de producción esto para aprovechar las capas
+RUN npm install --only=production
+
+COPY [".", "/usr/src/"]
+
+# instalación dependencias de desarrollo
+RUN npm install --only=development
+
+# Ejecutar los test
+RUN npm run test
+## Esta imagen esta creada solo para pasar los tests.
+
+# Productive image
+FROM node:12
+
+COPY ["package.json", "package-lock.json", "/usr/src/"]
+
+WORKDIR /usr/src
+# instar las dependencias de PRO
+RUN npm install --only=production
+
+# Copiar  el fichero de la imagen anterior.
+# De cada stage se reutilizan las capas que son iguales.
+COPY --from=builder ["/usr/src/index.js", "/usr/src/"]
+# Pone accesible el puerto
+EXPOSE 3000
+
+CMD ["node", "index.js"]
+### En tiempo de build en caso de que algún paso falle, el build se detendrá por completo.
+```
+
+## Docker-in-Docker
+
+* docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock docker:19.03.12
+* docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v $(wich docker):/bin/docker wagoodman/dive:latest prodapp
+
+
 
 
 
