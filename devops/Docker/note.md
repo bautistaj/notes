@@ -30,8 +30,8 @@ Ejecutar Software: La máquina donde se escribe el software siempre es distinta 
 * Recursos de hardware.
 
 ## Virtualización
-Versión virtual de algún recurso como hardware, sitema operativo, dispositivo de almacenamiento o recurso de red.
 
+Versión virtual de algún recurso como hardware, sitema operativo, dispositivo de almacenamiento o recurso de red.
 Con palabras más simples, es que nos permite atacar los tres grandes problemas del desarrollo de software profecionales.
 
 Ya  antes se a propuesto formas para atacar los problemas antes mencionado como por ejemplo las maquinas virtuales, acontinuación se describe algunas problematicas que presnetan.
@@ -209,6 +209,9 @@ Para poder seguir los log del cotenedor podemos ejecutar:
 
 # Dato en docker
 ## Bind mounts
+
+Practicamente es atar una maquina una ruta que ejecuta el contenedir con un ruta dentro del contenedor.
+Entonces todo lo que oucurre en esta ruta dentro del contenedor va aparecer en la maquina anfitriona.
 
 Persistir la data en nuestra maquina y no en en el contenedor.
 
@@ -607,17 +610,12 @@ CMD ["node", "index.js"]
 ```
 
 ## Docker-in-Docker
+Usar docker desde otros contenedores.
 
+Se puede comunica con docker deamon debido a que tiene una interfaz "socket".
+De este modo 
 * docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock docker:19.03.12
 * docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v $(wich docker):/bin/docker wagoodman/dive:latest prodapp
-
-
-
-
-
-
-
-
 
 
 
