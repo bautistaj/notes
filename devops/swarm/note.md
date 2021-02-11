@@ -42,12 +42,95 @@ Manager y Workers deben de tener la misma version de dokerdeamon y tener visibil
   *  Admin processes: Poder administrar las apps sin la neceisdad de inciar sesion como adminitrador para hacer dichas tareas.
 
 
+## Primeros pasos.
+
+### Tu primer docker swarm
+
+Para inicializar **Swarm** solo ejecutamos
+
+```bash
+docker swarm init 
+```
+
+Cabe mencionar que este nodo se inicializa como un **manager**
+
+Para agregar un nodo de tipo **worker** necesitamos ejecutar el siguiente comando.
+
+```bash
+docker swarm join --token <token> <ip>
+```
+
+Para agregar un **manager** ejecutamos y seguimos las intrucciones. 
+```bash
+docker swarm join-token manager
+```
+
+Listamos los nodos disponibles
+```bash
+docker node ls
+```
+
+Inspeccionar el nodo, pues usar **self** o bien el ID del container.
+```bash
+docker node inspect self
+```
+
+Para salir de docker Swarm ejecutamos
+```bash
+docker swarm leave --force
+```
+Debemos tener cuidado cuando salimos de un nodo, si este es de tipo **worker** no hay problema, el problema se presenta cunado intentamos salir de un **manager**.
 
 
 
+### Fundamentos de docker swarm, Servicios
+
+Los servicios de Swarm usan un modelo declarativo, lo que significa que el estado del servicio los pudes definir y confiar en docker para que lo mantenga.
+
+Comando para crear un servicio
+```bash
+docker service create --name pinger alpine ping wwww.google.com
+```
+
+Listar los servicios 
+
+```bash
+docker service ls 
+```
 
 
+### Entendiendo el ciclo de vida de un servicio
+
+Para ver el estatus de un servicio.
+```
+docker service ps service_name
+```
+
+Cliente: 
+  * docker service create
+Nodo manager:
+  * Crea el servicio
+  * Creaa tareas del servicio y asigna una IP
+  * Asigna tareas a nodos
+Nodo Worker
+  * Recibe la descriptción de la tarea
+  * Prepaa la tarea
+  * Ejecuta contanedores
 
 
+Comando para inpeccionar un servicio
+```bash
+docker service inspect service_name
+```
+
+Revisar los logs
+```bash
+docker service logs -f service_name
+```
+
+Eliminar un servicio
+```bash
+docker service rm service_name
+```
 
 
