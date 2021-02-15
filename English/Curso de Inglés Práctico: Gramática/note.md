@@ -5,7 +5,7 @@ We use the simple past with the verb BE to talk about how things were before.
 
 Examples:
 * I was young when we moved.
-* She was a very good student good student at school.
+* She was a very good student at school.
 * He was very quite when he was a kid.
 * Was it too difficult?
 * You were very good students at school.
@@ -69,17 +69,38 @@ We can use un count noun or a plural noun with no.
 * What
 
 Example
-* I like any dog I see
-* I need another computer.
-* Education is the most relevant aspect for s society
-* Water is good for us
+* I like **any** dog I see
+* I need **another** computer.
+* **Education** is the most relevant aspect for society
+* **Water** is good for us
+
+## Grammar: Expressions to give directions in the city
+
+There are many expressions to give directions in English
+
+* **Straight ahead**: To continue in the same direction.
+  * Go straight ahead for two blocks
+* **Turn right**: Turn in different directions.
+* **Turn left**: Turin different directions.
+  * Turn right at the corner and walk straight ahead
+* **To across the street**
+  * Cross the street and you will see the bank.
+
+## Prepositions of place
+
+|  Preposition of place | Example |Notes|
+|-------------|---------|---------|
+|Next to|The bank **is next to** the bakery|
+|Beside|The bank is **beside** the bakery|
+|close to| The bank is **close to** the pet store|
+|Near|The bank is **near** the pet store|you don't us **to**|
+|In front of|The restaurant is in front of the pet store||
+|Across|The pet store is across the street||
 
 
-* **Most** kids in my classroom were only 7
-* I enjoy **all** kinds of music
-* **My** car is the green one on the left
-* **Any** person can bake a cake, it’s so easy
-* Could you bring me **The** computer I put on the desk?
+
+
+
 
 
 
