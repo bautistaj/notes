@@ -4,11 +4,11 @@
 We use the simple past with the verb BE to talk about how things were before.
 
 Examples:
-* I was young when we moved.
-* She was a very good student at school.
-* He was very quite when he was a kid.
-* Was it too difficult?
-* You were very good students at school.
+* I **was** young when we **moved**.
+* She **was** a very good student at school.
+* He **was** very quite when he **was** a kid.
+* **Was** it too difficult?
+* You **were** very good students at school.
 
 Structure:
 * Subject + verb BE + complement
@@ -42,7 +42,7 @@ There are some verbs that change. Irregular verbs.
 ## Grammar: How to use determiners
 We use determiners to express the reference of a noun in a given context, they tell us if the noun is general or specific.
 
-### Specific determiners
+### Specific determiners
 We use specific determiners when we believe the listener/reader knows exactly we are talking about.
 
 * The definite article: **the**
@@ -60,7 +60,7 @@ Examples
 
 ### General determiners
 we use general determiners when the listener doesn't know what we are talking about.
-We can use un count noun or a plural noun with no.
+We can use un count noun or a plural noun with **no**.
 * A
 * An
 * Any 
@@ -74,7 +74,7 @@ Example
 * **Education** is the most relevant aspect for society
 * **Water** is good for us
 
-## Grammar: Expressions to give directions in the city
+## Grammar: Expressions to give directions in the city
 
 There are many expressions to give directions in English
 
@@ -96,6 +96,78 @@ There are many expressions to give directions in English
 |Near|The bank is **near** the pet store|you don't us **to**|
 |In front of|The restaurant is in front of the pet store||
 |Across|The pet store is across the street||
+
+# Grammar: The expression its + adjective + to verb
+
+|Adjective|Example|
+|---------|-------|
+|Beautiful|It's beautiful to see the sunset|
+|Boring|It's boring to wait for the flight|
+|Exciting|It's exciting to visit new places|
+|Fascinating|It's fascinating to visit museums|
+|Expensive|It's expensive to stay 5 starts hotels|
+|Cheap|It's cheap to use public transport|
+
+
+# Grammar: The use of whose and possessive pronouns
+Whe use **WH** questions **WHOSE** to identify the owner of an object.
+
+A: Whose is this cellphone?
+B: This cellphone is Sebastian's but this one is **mine**.
+
+## Possessive pronouns
+We use possessive pronouns to refer to the owner of an object.
+
+|Pronoun |Possessive Pronoun|Example|
+|--------|------------------|-------|
+|I|Mine|Juan's car is red **mine** is black|
+|You|Yours|My house is white, **yours** is blue|
+|He|His|**His** books are only about math **mine** are about programing|
+|She|Hers|Jose's desk is black, **hers** are brown|
+|It|Its|My dog is hungry and it's eating **its** food|
+|We|Ours|**Their** house is far from the city **ours** is very close|
+|They| Theirs |**Our** car is fast **theirs** is slow|
+
+
+# Grammar: Reflexive pronouns and the past continuous
+We use reflexive pronouns when the action affects the same subject who performs it.
+
+|Pronoun |Reflexive Pronoun|
+|--------|------------------|
+|I|Myself|
+|You|Yourself|
+|He|Himself|
+|She|Herself|
+|It|Itself|
+|We|Ourselves|
+|They| Theirselves |
+
+Example:
+* I love **myself**.
+* You put **yourself** in danger.
+* He looks at **himself**.
+
+Or when a person doing something on their own.
+Example:
+* I myself did all these things.
+* She did the project herself.
+
+## Past continuous
+We use the past continuous to describe things that were happening at a specific moment in the past.
+
+Structure:
+* **+** Subject + verb in past + verb ing + complement
+* **-** Subject + verb in past + not + verb ing + complement
+* **?** WH + verb in past + subject + verb ing + complement + ?
+
+
+
+
+
+
+
+
+
 
 
 
