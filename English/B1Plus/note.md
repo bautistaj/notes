@@ -250,3 +250,252 @@ make
 help
 have
 
+* Let us speak please
+* I made some bread
+* Can you help me please
+
+
+# Adverbs of comment
+
+There are some adverbs and adverbial expressions which tell us about the speaker's viewpoint or opinion about an action, or make some comment on the action.
+
+|Viewpoint or commenting adverb|At the start of a sentence|Before the main verb|At the end of a sentence|
+|:----------:|:-------------:|:----------:|:-------------:|
+| Clearly | **Clearly**, he doesn't know what he is doing | He **clearly** doesn't know what he is doing | He doesn't know what he is doing, **clearly** |
+| obviously | **Obviously**, you are acting silly. | You are **obviously** acting silly | You are acting silly, **obviously**. |
+| personally | **Personally**, I'd rather go by train. | I'd **personally** rather go by train. | I'd rather go by train, **personally**. |
+| presumably | **Presumably**, he didn't have time to go to the post office. | He **presumably** didn't have time to go to the post office. | He didn't have time to go to the post office, **presumably**. |
+| seriously | **Seriously**, I can't give this speech. | I **seriously** can't give this speech. | I can't give this speech, **seriously**. |
+| surely |  **Surely** you tried to get here on time. | You **surely** tried to get here on time. | You tried to get here on time, **surely**. |
+| technically |  **Technically**, we cannot fly to Mars and back. | We **technically** cannot fly to Mars and back. | We cannot fly to Mars and back, **technically**. |
+| undoubtedly |  **Undoubtedly**, he has a good reason not to come. | He **undoubtedly** has a good reason not to come. | He has a good reason not to come, **undoubtedly**. |
+| bravely |  **Bravely**, I kept on walking. | I **bravely** kept on walking. | *I kept on walking, **bravely**. |
+| Carelessly |  **Carelessly**, she threw her book into the pond. | She **carelessly** threw her book into the pond. | *She threw her book into the pond, **carelessly**. |
+| certainly |  **Certainly** you should be there. | You **certainly** should be there. / You should **certainly** be there. | You should be there, **certainly**. |
+| cleverly |  **Cleverly**, Sally hid the jellybeans. | Sally **cleverly** hid the jellybeans. | *Sally hid the jellybeans, **cleverly**. |
+| definitely |  ***Definitely**, you are smart. | You **defintely** are smart. / You are **definitely** smart. | *You are smart, **definitely**. |
+| foolishly |  **Foolishly**, they cried out. | They **foolishly** cried out.| They cried out, **foolishly**. |
+| generously |  **Generously**, he donated the money. | He **generously** donated the money.| *He donated the money, **generously**. |
+| stupidly |  **Stupidly**, they played in the street. | They **stupidly** played in the street.| *They played in the street, **stupidly**. |
+| obviously | **Obviously**, we are lost. | We are **obviously** lost. / *We **obviously** are lost.| We are lost, obviously. |
+
+# So Vs Such
+We can say about **So** and **Such** That;
+* Both of them usually have the same meaning **Very**.
+* Both of them show extremes.
+* We can use both of them to add emphasis to the sentence.
+* Although they have some similarities, there are some main differences in their use in a sentence.
+
+### Examples So
+* So + Adjective = Mark seems so un happy
+* So + Adverbs = She speaks so quicly.
+* So + Judgement Adjective = It is so rainy outside
+* So Much/Many/Few/Little/ + Noun = There are so few cars in the park a lot
+
+### Examples Such 
+* Such + a/an + Adjective + Noun = She is such an intelligent boy 
+* Such + Judgment Noun = He is such Lier, Don't be such a fool
+* Such + a/an Noun = Why did you say such thing?
+
+# Resources / Materials Part 1:
+## Parallel comparatives
+
+|Kind|Examples|Structures|
+|----------|:-------------:|:-------------:|
+| Short and simple | The cheaper, the better |the + comparative (comma) the + comparative |
+| Adding nouns | The bigger the risk, the greater the reward. | the + comparative + the + noun (comma) the + comparative + the + noun|
+| Comparing actions | The longer they waited, the more anxious they became. | the + comparative + subject + verb (comma) the + comparative + subject + verb| 
+
+## The…the… with comparative adjectives
+
+Comparison and contrast are expressed by the use of the…the… with comparative adjectives in parallel clauses. This structure is used to show proportionate increase or decrease.
+
+
+
+* The more adventurous it is, the more I like it. (NOT The more it is adventurous, the more I like it.)
+* The less I see him the more I like him.
+* The more he reads, the less he understands.
+* The older we grow, the wiser we become.
+* The higher you climb, the colder it gets.
+* The richer one grows, the greater one’s worries.
+* The less you spend, the more you save.
+* The sooner they go, the better it is.
+
+
+
+
+# Resources / Materials Part 1:
+
+# The passive with GET
+Get is often used instead of be in the passive voice in informal spoken English to refer to an action that happens by accident or unexpectedly:
+* Their car **got stolen** in front of their house last night.
+* Jerry **got fired** because he was always late for work.
+
+
+Get expresses action and change and is only used with action verbs, not state verbs:
+
+* Jerry **was fired** because he was always late for work.
+* Jerry **got fired** because he was always late for work. (fire is an action verb)
+
+As get in the passive voice expresses action, it makes it possible to differentiate between an action and a state if it is not otherwise clear:
+
+* The living room window **was broken**. (state or action)
+* The living room window **got broken**. (action)
+
+The passive with be and the agent mentioned also makes the distinction clear:
+* The living room window was broken by the burglar. (action)
+
+A reflexive pronoun after get indicates that the recipient of the action is in some way involved in or responsible for what happened:
+* He **got injured** while playing football. (it was an accident)
+* He **got himself injured** while trying bike stunts. (it was partly his fault)
+
+The get passive is also used in certain idiomatic expressions:
+
+
+## Idiomatic expressions with the get passive
+* get dressed
+* get washed
+* get engaged
+* get married
+* get divorced
+* get lost
+* get mixed up
+* get started
+
+
+# FUTURE IN THE PAST
+The future in the past is used to refer to something that was the future at some time in the past. It does not matter if the future event happened or not as it was thought to be the future at the time.
+
+As for the simple future forms will, going to and the continuous, there are three future in the past forms: **would**, **was/were going to** and **was/were + continuous** verb.
+
+* Would is used to talk about a past future promise or prediction with no evidence.
+* Was/were going to is used to talk about a past future firm plan, intention or a prediction with evidence.
+* Was/were + continuous verb is used to talk about a future in the past that was a personal arrangement.
+
+## Examples
+* He **was** sure she **would** never help him. It turned out he had been right – a past promise
+* She **promised** she **would** call me, but she never did – a past promise.
+* They **said** they **would** be here by 9pm, but they haven’t arrived yet – a promise.
+* The newspapers **said** it **would** rain but it’s stayed dry – a prediction without evidence.
+* I **thought** they **would** win, but it was a draw – a prediction without evidence
+
+
+
+# English Grammar: Future Intentions
+Here are some ways you can talk about your future plans and intentions in English. These are activities that you know will happen, because you planned them and decided to do them.
+
+## Be going to + verb
+Use this to talk about activities you planned before.
+Remember to change “be” to the correct form for the subject:
+
+* I am going to play tennis tomorrow.
+* You are going to see your cousin next week.
+* He / She is going to get married in September.
+* We are going to have a party this weekend.
+* They are going to save up for a new car.
+
+## Question form
+As with all verbs that use the verb “to be”, change the subject and the form of the verb to make questions:
+
+* Am I going to…?
+* Are you going to…?
+* Is he / she going to…?
+* Are we going to…?
+* Are they going to…?
+
+## Short replies
+
+* Yes I am / No I’m not
+* Yes you are / No you aren’t (or No you’re not)
+* Yes he is / No he isn’t
+* Yes we are / No we aren’t (or No we’re not)
+* Yes they are / No they aren’t (or No they’re not)
+
+## Negative form
+
+* I am not going to leave my job.
+* You aren’t going to visit your cousin this week.
+* He / She isn’t going to get married.
+* We aren’t going to move house.
+* They aren’t going to study at university.
+
+
+# Present Continuous
+
+We use the Present Continuous to talk about planned appointments and activities. These are the types of activities that you write in your diary, for example. We often give a time reference.
+
+* Very often, “be going to” and the Present Continuous can be used in the same situations.
+* I’m visiting our new office in London this afternoon. (I’m gong to visit our new office…)
+* You’re meeting the boss tomorrow. (You’re going to meet the boss…)
+* He / She is working from home next week. (He is going to work from home…)
+* We’re taking the train to Scotland. (We are going to take the train…)
+They’re leaving later today. (They are going to leave…)
+
+# Be planning to / Be thinking of
+
+You can use the verbs “plan” and “think” in the present continuous is to talk about activities that aren’t 100% definite.
+
+* I’m planning to study abroad next year.
+* We’re thinking of getting a dog.
+
+Remember: “be planning to” is followed by the verb; “be thinking of” is followed by a gerund (ing form).
+
+# Review of “will”
+
+We can use “will” to talk about the future and make predictions.
+
+* “We won’t have enough money to buy a new house this year.”
+
+We can also use “will” to talk about decisions that we make at the time of speaking (NOT decisions that we plan before):
+
+* “I’ll help you with your bags.” (at the moment you see someone with a heavy bag)
+
+# Past Perfect Tense
+The past perfect, also called the pluperfect, is a verb tense used to talk about actions that were completed before some point in the past.
+
+## Example
+We were shocked to discover that someone had graffitied “Tootles was here” on our front door. We were relieved that Tootles had used washable paint.
+
+The past perfect tense is for talking about something that happened before something else. Imagine waking up one morning and stepping outside to grab the newspaper. On your way back in, you notice a mysterious message scrawled across your front door: Tootles was here. When you’re telling this story to your friends later, how would you describe this moment? You might say something like:
+
+* I turned back to the house and saw that some someone named Tootles had defaced my front door!
+
+In addition to feeling indignant on your behalf, your friends will also be able to understand that Tootles graffitied the door at some point in the past before the moment this morning when you saw his handiwork, because you used the past perfect tense to describe the misdeed.
+
+## The Past Perfect Formula
+The formula for the past perfect tense is had + [past participle]. It doesn’t matter if the subject is singular or plural; the formula doesn’t change.
+
+## When to Use the Past Perfect
+
+So what’s the difference between past perfect and simple past? When you’re talking about some point in the past and want to reference an event that happened even earlier, using the past perfect allows you to convey the sequence of the events. It’s also clearer and more specific. Consider the difference between these two sentences:
+
+* We were relieved that Tootles used washable paint. 
+* We were relieved that Tootles had used washable paint.
+
+It’s a subtle difference, but the first sentence doesn’t tie Tootles’s act of using washable paint to any particular moment in time; readers might interpret it as “We were relieved that Tootles was in the habit of using washable paint.” In the second sentence, the past perfect makes it clear that you’re talking about a specific instance of using washable paint.
+
+Another time to use the past perfect is when you are expressing a condition and a result: 
+
+* If I had woken up earlier this morning, I would have caught Tootles red-handed.
+
+The past perfect is used in the part of the sentence that explains the condition (the if-clause).
+
+Most often, the reason to write a verb in the past perfect tense is to show that it happened before other actions in the same sentence that are described by verbs in the simple past tense. Writing an entire paragraph with every verb in the past perfect tense is unusual.
+
+## Common Irregular Verbs in the Past Perfect Tense
+Infinitive
+
+|Infinitive|Past Perfect|Negative|
+|----------|:-------------:|:-------------:|
+| To be | had been | had not been |
+| To have | had had | had not had |
+| To do | had done | had not done |
+| To say | had said | had not said |
+| To get | had gotten | had not gotten |
+| To make | had made | had not made |
+| To go | had gone | had not gone |
+| To take | had taken | had not taken |
+| To see | had seen | had not seen |
+| To come | had come | had not come |
+
+*The past participle of “to get” is “gotten” in American English. In British English, the past participle is “got.” 
